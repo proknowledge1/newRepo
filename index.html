@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@600&family=Quicksand:wght@400;500&display=swap");
+      body {
+        background-color: #e2e2e2;
+        color: #000000;
+        margin: 20px 0px 20px 0px;
+        font-family: "Quicksand";
+        max-width: 100%;
+      }
+
+      header {
+        color: #5a5a5a8e;
+        background-color: #ffffff;
+        font-size: 50px;
+        margin-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-family: "Poppins";
+        font-weight: 500;
+      }
+      navbar {
+        background-color: #79797981;
+        height: 50px;
+        margin: 20px auto;
+        color: black;
+        display: flex;
+      }
+      a {
+        color: #010f30;
+        font-size: 20px;
+        text-decoration: none;
+        align-self: center;
+        padding-left: 50px;
+        font-weight: 500;
+      }
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        
+      }
+      .content {
+        position: fixed;
+        top: 0;
+        display:block;
+        color: #000000;
+        width: 100%;
+        padding: 20px;
+      }
+      .main{
+        display: flex;
+        flex-direction: row;
+      }
+      img {
+        width: 300px;
+        margin-right: 30px;
+        border-radius: 50%;
+        display:flex;
+      }
+      .write{
+        font-family: "Poppins";
+        color:#000000;
+        padding-left: 40px;
+        
+      }
+
+      .elements img{
+        height:50px;
+        width:100px;
+        border-radius: 10px;
+        border:2px rgba(82, 82, 82, 0.747) solid;
+        
+      }
+      .write p{
+        font-weight: 700;
+      }
+      .elements{
+        display:flex;
+        flex-direction:row;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="Comp_8.mp4" type="video/mp4" />
+    </video>
+
+    <div class="content">
+      <header>Portfolio</header>
+      <navbar>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">ACADEMICS</a>
+        <a href="#">EXPERIENCE</a>
+        <a href="#">HOBBIES</a>
+      </navbar>
+      <div class="main">
+        <div>
+            <img src="animal.jpg" alt="animal" />
+        </div>    
+        <div class="write">
+            <p>ACADEMICS</p>
+            <ul type="disc">
+                <li>Currently Pursuing B.E in Information Technology from VESIT.</li>
+                <li>Completed H.S.C from Vivekanand Junior College.</li>
+                <li>Completed S.S.C from St.Anthony Girls High School.</li>
+            </ul>
+            <p>SKILLS</p>
+            <div class="elements">
+                <img src="mongo.jpg">
+                <img src="express.jpg">
+                <img src="react.jpg">
+                <img src="node.jpg">
+        </div>
+        
+    </div>
+  </body>
+</html>
